@@ -1,0 +1,100 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "nav nav nav nav myPhoto"
+        "main main main main myPhoto"
+        "main main main main myPhoto"
+        "who who what what aside"
+        "who who what what aside"
+        "myCV myCV myCV myCV aside"
+        "myCV myCV myCV myCV aside"
+        "footer footer footer footer footer";
+}
+main,
+.myPhoto,
+.who,
+.what,
+aside,
+.myCV,
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li {
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    margin: 20px;
+}
+.navbar{
+    display: flex;
+}
+.sal{
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+.nav3{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.contact{
+    float: right;
+}
+nav{
+    grid-area: nav;
+}
+main{
+    grid-area: main;
+    width: 80%;
+    height: 50vh;
+    background-color: #ba68c8;
+    margin: 20px 20px 0 20px;
+}
+.who{
+    grid-area: who;
+    width: 65%;
+    height: 60vh;
+    background-color: #ab47bc;
+    margin: 10px 0 20px 40px;
+}
+.what{
+    grid-area: what;
+    width: 65%;
+    height: 60vh;
+    background-color: #ab47bc;
+    margin: 10px 0 20px 40px;
+}
+.myPhoto{
+    grid-area: myPhoto;
+    height: 60vh;
+    background-color: #9c27b0;
+    margin-top: 80px;
+}
+.myCV{
+    grid-area: myCV;
+    height: 40vh;
+    width: 80%;
+    background-color: #8e24aa ;
+    margin: 20px;
+}
+aside{
+    grid-area: aside;
+    height: 120vh;
+    background-color: #7b1fa2;
+}
+footer{
+    grid-area: footer;
+    height: 20vh;
+    background-color: #6a1b9a;
+}
