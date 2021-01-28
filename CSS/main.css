@@ -1,100 +1,137 @@
-body{
-    padding: 0;
+*{
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
+
 .container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-        "nav nav nav nav myPhoto"
-        "main main main main myPhoto"
-        "main main main main myPhoto"
-        "who who what what aside"
-        "who who what what aside"
-        "myCV myCV myCV myCV aside"
-        "myCV myCV myCV myCV aside"
-        "footer footer footer footer footer";
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/cyberSecurity.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
 }
-main,
-.myPhoto,
-.who,
-.what,
-aside,
-.myCV,
-footer{
+
+.navbar{
+    height: 12%;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
-nav ul li {
-    list-style-type: none;
+
+.logo{
+    width: 80px;
+    cursor: pointer;
 }
+
+.menu-icons{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
 nav ul li a{
     text-decoration: none;
-    margin: 20px;
+    color: #fff;
+    font-size: 13px;
 }
-.navbar{
+
+nav ul li a:hover{
+    background: red;
+    padding: 5px 5px 5px 5px;
+    border-radius: 3px;
+}
+
+.row{
     display: flex;
-}
-.sal{
-    padding: 0;
-    margin: 0;
-    float: left;
-}
-.nav3{
-    display: flex;
-    text-align: center;
+    height: 88%;
     align-items: center;
-    justify-content: center;
 }
-.contact{
-    float: right;
+
+.col{
+    flex-basis: 50%;
 }
-nav{
-    grid-area: nav;
+
+h1{
+    color: #fff;
+    font-size: 90px;
 }
-main{
-    grid-area: main;
-    width: 80%;
-    height: 50vh;
-    background-color: #ba68c8;
-    margin: 20px 20px 0 20px;
+
+p{
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
 }
-.who{
-    grid-area: who;
-    width: 65%;
-    height: 60vh;
-    background-color: #ab47bc;
-    margin: 10px 0 20px 40px;
+
+button{
+    width: 150px;
+    color:#fff;
+    font-size: 12px;
+    padding: 12px 0;
+    background: red;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 30px;
 }
-.what{
-    grid-area: what;
-    width: 65%;
-    height: 60vh;
-    background-color: #ab47bc;
-    margin: 10px 0 20px 40px;
+
+button:hover{
+    background: none;
+    border: 1px solid #fff;
 }
-.myPhoto{
-    grid-area: myPhoto;
-    height: 60vh;
-    background-color: #9c27b0;
-    margin-top: 80px;
+
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
 }
-.myCV{
-    grid-area: myCV;
-    height: 40vh;
-    width: 80%;
-    background-color: #8e24aa ;
-    margin: 20px;
+
+.card1{
+    background-image: url(../images/profile.JPEG);
 }
-aside{
-    grid-area: aside;
-    height: 120vh;
-    background-color: #7b1fa2;
+.card2{
+    background-image: url(../images/lifestyle.jpg);
+    position: relative;
+    top: 15px;
 }
-footer{
-    grid-area: footer;
-    height: 20vh;
-    background-color: #6a1b9a;
+.card3{
+    background-image: url(../images/phone.jpg);
+    width: 430px;
+    height: 230px;
 }
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+h5{
+    color:#fff;
+    text-shadow: 0 0 5px #999;
+}
+
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}
+

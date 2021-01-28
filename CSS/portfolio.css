@@ -1,0 +1,388 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	text-align: center;
+}
+
+.wrap {
+	width: 1170px;
+	margin: 0 ;
+}
+
+.wrap .logo img{
+	width: 45%; 
+	height: auto; 
+	padding: 10px 0 100px 0;
+	margin: 0;
+}
+
+/* navbar */
+header {
+    height: 80px;
+	background: #000000;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+	opacity: 0.8;
+}
+
+.logo {
+	width: 20%;
+	float: left;
+}
+
+/* .wrap .logo{
+    width: 20%;
+    padding-top: 10px;   
+} */
+nav {
+	float: right;
+	line-height: 100px;
+}
+
+nav a {
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	padding: 6px 13px;
+	text-decoration: none;
+	transition: .4s;
+}
+
+nav a:hover{
+	background-color:red ;
+	border-radius: 5px;
+}
+
+/* Main  area*/
+.main-area {
+	width: 100%;
+	position: fixed;
+	top: 80px;
+	background-image: url(../images/portfoliobackground.jpg);
+	background-size: cover;
+    background-position: center center;
+	height: 750px;
+	z-index: -1;
+}
+
+.main-area h2 {
+	padding-top: 8%;
+	font-size: 70px;
+	font-family: Poppins;
+	text-transform: uppercase;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.main-area p{
+	color: #ffffff;
+	opacity: 0.9;
+}
+
+/*content area */
+.content-area {
+	width: 90%;
+	position: relative;
+	top: 400px;
+	left: 5%;
+	background: #ebebeb;
+	padding-bottom: 20%;
+}
+
+.content-area h2 {
+	font-family: Poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
+}
+
+.content-area p {
+	padding: 2% 0px;
+	font-family: Poppins;
+    line-height: 30px;
+}
+
+.content-area h1{
+    font-family: Poppins ;
+}
+
+.content-area h3{
+    font-family: Poppins;
+}
+
+/* profile and decription */
+.profile-description{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "profile description"
+        "profile description";
+	padding-bottom: 50px;
+}
+
+img{
+    grid-area: profile;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+	margin: 0 0 0 280px;
+}
+
+.personal_info{
+    grid-area: description;
+    margin: 0 280px 0 0;
+}
+
+/* button */
+.view-resume{
+    width: 45%;
+    border-radius: 5px;
+    padding: 10px;
+    background-color:#ef5350  ;
+	border: none;
+	margin-right: 5px;
+	
+}
+
+.view-resume a {
+    text-decoration: none;
+}
+
+.view-resume:hover{
+	background: none;
+	cursor: pointer;
+	border: 1px solid white;
+}
+
+.btn{
+	width: 45%;
+	background-color:#1e88e5 ;
+	border-radius: 5px;
+	padding: 10px;
+	border: none;
+}
+
+.btn:hover{
+	background: none;
+	cursor: pointer;
+	border: 1px solid white;
+}
+
+.self-intro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "who what";
+    padding-bottom: 30px;
+}
+
+.who{
+    grid-area: who;
+    height: 40vh;
+    width: 50%;
+    position: relative;
+	left: 30%;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px 5px 5px 5px;
+}
+
+.what{
+    grid-area: what;
+    height: 40vh;
+	width: 50%;
+	position: relative;
+	left: 20%;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px 5px 5px 5px;
+}
+
+/* Education */
+.position{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+		"self-position year-position";
+	position: relative;
+	bottom: 20%;
+}
+
+.self-position{
+	grid-area: self-position;
+	position: relative;
+	right: 5%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.year-position{
+	grid-area: year-position;
+	position: relative;
+	right: 15%;
+	top: 12%;
+	font-family: arial;
+}
+
+.year-position li {
+	list-style-type: none;
+}
+
+/* Experiences */
+.experience{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+		"self-experience year-experience";
+}
+
+.self-experience{
+	grid-area: self-experience;
+	position: relative;
+	right: 5%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.year-experience{
+	grid-area: year-experience;
+	position: relative;
+	right: 15%;
+	top: 12%;
+	font-family: arial;
+}
+
+.year-experience li {
+	list-style-type: none;
+}
+
+/* Certificates and Award */
+
+.certificate{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+		"self-award year-award";
+}
+
+.self-award{
+	grid-area: self-award;
+	position: relative;
+	right: 5%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.year-award{
+	grid-area: year-award;
+	position: relative;
+	right: 15%;
+	top: 20%;
+	font-family: arial;
+}
+
+.year-award h3, h5{
+	margin-left: 0;
+}
+
+
+/* Footer */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fcfcfc;
+}
+
+footer{
+    position: absolute;
+    top: 400vh;
+	left: 5%;
+    background: #111;
+    height: auto;
+    width: 90%;
+    font-family: "Open Sans";
+    padding-top: 40px;
+	color: #fff;
+	margin-bottom: 0;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+	text-align: center;
+	top: 10%;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+
+.socials a:hover i{
+    color: #1e88e5;
+}
+
+.footer-bottom{
+    background: #455a64;
+    width: 80%;
+    padding: 20px 0;
+	text-align: center;
+	position: relative;
+	left: 10%;
+	border-radius: 3px;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+
