@@ -146,7 +146,7 @@ img{
     background-color:#ef5350  ;
 	border: none;
 	margin-right: 5px;
-	
+	color: white;
 }
 
 .view-resume a {
@@ -157,6 +157,7 @@ img{
 	background: none;
 	cursor: pointer;
 	border: 1px solid white;
+	color: #000;
 }
 
 .btn{
@@ -165,12 +166,14 @@ img{
 	border-radius: 5px;
 	padding: 10px;
 	border: none;
+	color: white;
 }
 
 .btn:hover{
 	background: none;
 	cursor: pointer;
 	border: 1px solid white;
+	color: #000;
 }
 
 .self-intro{
@@ -301,9 +304,9 @@ body{
 
 footer{
     position: absolute;
-    top: 400vh;
+    top: 420vh;
 	left: 5%;
-    background: #111;
+    background: #000;
     height: auto;
     width: 90%;
     font-family: "Open Sans";
@@ -363,7 +366,7 @@ footer{
 }
 
 .footer-bottom{
-    background: #455a64;
+    background: #757575;
     width: 80%;
     padding: 20px 0;
 	text-align: center;
