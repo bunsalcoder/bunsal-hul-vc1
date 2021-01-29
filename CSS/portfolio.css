@@ -231,8 +231,57 @@ img{
 	font-family: arial;
 }
 
-.year-position li {
-	list-style-type: none;
+.year-position ul li{
+	position: relative;
+	left: 10%;
+	text-align: left;
+	list-style-type: disc;
+}
+
+/* Skills */
+
+.skills{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+		"self-skill year-skill";
+	position: relative;
+	bottom: 20%;
+}
+
+.self-skill{
+	grid-area: self-skill;
+	position: relative;
+	right: 5%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.year-skill{
+	position: relative;
+	left: 0;
+}
+
+/* percentage */
+
+.percentage-name{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "name percentage";
+}
+
+.name{
+	grid-area: name;
+	text-align: left;
+}
+
+.percentage{
+	grid-area: percentage;
+	position: relative;
+	right: 60%;
+}
+
+.name ul li{
+	list-style-type: disc;
 }
 
 /* Experiences */
@@ -258,8 +307,11 @@ img{
 	font-family: arial;
 }
 
-.year-experience li {
-	list-style-type: none;
+.year-experience ul li {
+	position: relative;
+	left: 10%;
+	text-align: left;
+	list-style-type: disc;
 }
 
 /* Certificates and Award */
@@ -286,8 +338,11 @@ img{
 	font-family: arial;
 }
 
-.year-award h3, h5{
-	margin-left: 0;
+.year-award ul li{
+	position: relative;
+	left: 10%;
+	text-align: left;
+	list-style-type: disc;
 }
 
 
@@ -304,7 +359,7 @@ body{
 
 footer{
     position: absolute;
-    top: 420vh;
+    top: 480vh;
 	left: 5%;
     background: #000;
     height: auto;
@@ -385,6 +440,21 @@ footer{
     text-transform: uppercase;
     opacity: .4;
     font-weight: 200;
+}
+
+/* Responsive */
+
+@media(min-width: 300) and (max-width: 630){
+
+	.box-area{
+		flex-direction: column;
+	}
+	.wrap{
+		width: 100%;
+	}
+	.main-area{
+		width: 150%;
+	}
 }
 
 

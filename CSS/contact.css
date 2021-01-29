@@ -263,3 +263,27 @@ footer{
     opacity: .4;
     font-weight: 200;
 }
+
+/* phone-screen */
+@media(min-width:500px) and (max-width:1100px){
+    body{
+        display: inline-block;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        position: relative;
+        left: 20%;
+    }
+    iframe{
+        position: relative;
+        right: 5%;
+        width: 150vh;
+    }
+    footer{
+        position: absolute;
+        width: 100%;
+    }
+}
+
+/* Tablet-screen */
+/* in progress */
