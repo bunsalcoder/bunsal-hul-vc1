@@ -513,3 +513,90 @@ footer{
     opacity: .4;
     font-weight: 200;
 }
+
+
+
+/* Responsive */
+
+@media(min-width: 500) and (max-width: 1100){
+
+    .navbar nav ul li{
+        display: inline-block;
+        position: relative;
+        right: 50%;
+        left: 0;
+        top: 10%;
+        padding: 0;
+        margin: 5px;
+    }
+    .navbar .logo{
+        position: relative;
+        left: auto;
+        right: 0;
+        bottom: 5%;
+    }
+    .navbar .menu-icons{
+        position: relative;
+        right: auto;
+    }
+    .col h1{
+        font-size: 30px;
+    }
+    .col p{
+        font-size: 8px;
+    }
+    button{
+        padding: 2px;
+        margin: 2px;
+        width: 40%;
+        border-radius: 1px;
+        font-size: 10px;
+    }
+
+    .card1{
+        width: 180px;
+        height: 210px;
+        display: inline-block;
+        border-radius: 10px;
+        padding: 15px 25px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px 15px;
+        background-position: center;
+        background-size: cover;
+        transition: transform 0.5s;
+    }
+    .card2{
+        width: 100px;
+        height: 120px;
+        position: relative;
+        top: 10%;
+        border-radius: 10px;
+        padding: 15px 25px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px 15px;
+        background-position: center;
+        background-size: cover;
+        transition: transform 0.5s;
+    }
+    
+    .card3{
+        width: 400px;
+        height: 210px;
+    }
+    
+    h5{
+        font-size: 10px;
+    }
+    .card p{
+        font-size: 5px;
+    }
+    
+    .row{
+        height: 85%;
+    }
+    col{
+        flex-wrap: wrap;
+    }
+}

@@ -247,18 +247,24 @@ img{
 		"self-skill year-skill";
 	position: relative;
 	bottom: 20%;
+	right: 5%;
+	
 }
 
 .self-skill{
 	grid-area: self-skill;
 	position: relative;
-	right: 5%;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 .year-skill{
 	position: relative;
-	left: 0;
+	top: 10%;
+}
+
+.year-skill .percentage{
+	position: relative;
+	right: 60%;
 }
 
 /* percentage */
@@ -269,15 +275,17 @@ img{
 	grid-template-areas: "name percentage";
 }
 
-.name{
+.year-skill .name{
 	grid-area: name;
 	text-align: left;
+	position: relative;
+	left: 10%;
 }
 
 .percentage{
 	grid-area: percentage;
 	position: relative;
-	right: 60%;
+	right: 40%;
 }
 
 .name ul li{

@@ -285,8 +285,8 @@ footer{
         transition: transform 0.5s;
     }
     .card2{
-        width: 100px;
-        height: 120px;
+        width: 180px;
+        height: 210px;
         position: relative;
         top: 10%;
         border-radius: 10px;
